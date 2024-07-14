@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe</title>
+</head>
+<body>
+    <h1>Your Recipe</h1>
+    <p>{{ recipe }}</p>
+    <form action="/get_instructions" method="post">
+        <label for="recipe_name">Enter Recipe Name for Instructions:</label>
+        <input type="text" id="recipe_name" name="recipe_name">
+        <button type="submit">Get Instructions</button>
+    </form>
+</body>
+</html>
